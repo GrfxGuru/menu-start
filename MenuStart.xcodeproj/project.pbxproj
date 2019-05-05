@@ -96,11 +96,11 @@
 		D0B3B09C227F4D9300B36310 /* MenuStart */ = {
 			isa = PBXGroup;
 			children = (
-				D0B3B09D227F4D9300B36310 /* AppDelegate.swift */,
-				D0B3B09F227F4D9300B36310 /* ViewController.swift */,
-				D0B3B0A1227F4D9400B36310 /* Assets.xcassets */,
-				D0B3B0A3227F4D9400B36310 /* Main.storyboard */,
-				D0B3B0A6227F4D9400B36310 /* Info.plist */,
+				D0B3B0CD227F4E8400B36310 /* Assets */,
+				D0B3B0CC227F4E2900B36310 /* Resources */,
+				D0B3B0CB227F4E1700B36310 /* Storyboards */,
+				D0B3B0CA227F4E0100B36310 /* View Controllers */,
+				D0B3B0C9227F4DEF00B36310 /* Application Delegate */,
 				D0B3B0A7227F4D9400B36310 /* MenuStart.entitlements */,
 			);
 			path = MenuStart;
@@ -122,6 +122,46 @@
 				D0B3B0BD227F4D9500B36310 /* Info.plist */,
 			);
 			path = MenuStartUITests;
+			sourceTree = "<group>";
+		};
+		D0B3B0C9227F4DEF00B36310 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D0B3B09D227F4D9300B36310 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		D0B3B0CA227F4E0100B36310 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0B3B09F227F4D9300B36310 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D0B3B0CB227F4E1700B36310 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D0B3B0A3227F4D9400B36310 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D0B3B0CC227F4E2900B36310 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0B3B0A6227F4D9400B36310 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D0B3B0CD227F4E8400B36310 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D0B3B0A1227F4D9400B36310 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,7 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 93BM64U6PG;
-				INFOPLIST_FILE = MenuStart/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MenuStart/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -444,7 +484,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 93BM64U6PG;
-				INFOPLIST_FILE = MenuStart/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MenuStart/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

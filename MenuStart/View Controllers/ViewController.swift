@@ -10,6 +10,7 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    // MARK: - View Management
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +23,23 @@ class ViewController: NSViewController {
         }
     }
 
-
+    // MARK: - UI Controls
+    
+    @IBAction func openiTerm(_ sender: NSButton) {
+            startApp(appName: "iterm")
+    }
+    @IBAction func quitApplication(_ sender: NSButton) {
+        quitApp()
+    }
+    // MARK: - Business
+    
+    func startApp(appName: String) {
+        NSWorkspace.shared.launchApplication(appName)
+    }
+    
+    func quitApp() {
+        NSApplication.shared.terminate(self)
+    }
+    
 }
 
